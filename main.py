@@ -26,6 +26,8 @@ class User(Base):
 # Create the database tables
 Base.metadata.create_all(bind=engine)
 
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
 # Define the routes
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request):
