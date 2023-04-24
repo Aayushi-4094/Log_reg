@@ -4,24 +4,53 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Dashboard</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="/static/style_dashboard.css">
 </head>
 <body>
-  <h2>Welcome to your dashboard</h2>
-  <p>Here you can view your investments, track your progress, and get personalized recommendations.</p>
-  <h3>Your Investments</h3>
-  <ul>
-    <li>Investment 1</li>
-    <li>Investment 2</li>
-    <li>Investment 3</li>
-  </ul>
-  <h3>Investment Tracking</h3>
-  <p>Graph showing investment performance over time.</p>
-  <h3>Personalized Recommendations</h3>
-  <p>Recommendations based on investment history and risk tolerance.</p>
-  <script src="script.js"></script>
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">My Account</a>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Investments</a></li>
+        <li><a href="#">Progress</a></li>
+        <li><a href="#">Recommendations</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main class="container">
+    <section class="hero-section">
+      <h2>Welcome to your dashboard</h2>
+      <p>Here you can view your investments, track your progress, and get personalized recommendations.</p>
+    </section>
+
+    <section class="investments-section">
+      <h3>Your Investments</h3>
+      <ul class="investment-list">
+        <li>Investment 1</li>
+        <li>Investment 2</li>
+        <li>Investment 3</li>
+      </ul>
+    </section>
+
+    <section class="tracking-section">
+      <h3>Investment Tracking</h3>
+      <div class="graph-container"></div>
+    </section>
+
+    <section class="recommendations-section">
+      <h3>Personalized Recommendations</h3>
+      <p>Recommendations based on investment history and risk tolerance.</p>
+      <button class="recommendations-btn">View Recommendations</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2023 Dashboard. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
